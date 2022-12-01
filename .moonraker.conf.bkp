@@ -32,7 +32,7 @@ off_when_shutdown = True
 restart_klipper_when_powered = true
 initial_state = on
 
-[power Aux]
+[power Babe the Blue Aux]
 type = gpio
 pin = !gpiochip0/gpio24
 off_when_shutdown = True
@@ -64,12 +64,4 @@ type = git_repo
 path = ~/klipper-led_effect
 origin = https://github.com/julianschill/klipper-led_effect.git
 is_system_service = False
-
-[update_manager moonraker-telegram-bot]
-type = git_repo
-path = ~/moonraker-telegram-bot
-origin = https://github.com/nlef/moonraker-telegram-bot.git
-env = ~/moonraker-telegram-bot-env/bin/python
-requirements = scripts/requirements.txt
-install_script = scripts/install.sh
 
